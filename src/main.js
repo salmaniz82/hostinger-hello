@@ -10,6 +10,7 @@ app.get("/todo", async (req, res) => {
   let todo = [
     { id: 1, title: "some task", status: true },
     { id: 2, title: "some other task", status: false },
+    { id: 3, title: "some other task", status: true },
   ];
 
   res.status(200).json({
