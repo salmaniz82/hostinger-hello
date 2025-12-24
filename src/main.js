@@ -19,6 +19,13 @@ app.get("/todo", async (req, res) => {
   });
 });
 
+app.get("/test", (req, res) => {
+  const start = process.hrtime.bigint();
+  res.send("hello world");
+  const end = process.hrtime.bigint();
+  console.log(`Handler time: ${(end - start) / 1000000n} ms`);
+});
+
 app.listen(3000, function () {
   console.log("app is running at port");
 });
