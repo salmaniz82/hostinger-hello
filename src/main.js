@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/", async (req, res) => {
-  res.status(200).send("hello NODE/EXPRESS APP");
+  res.status(200).send("hello: testing update");
 });
 
 app.get("/todo", async (req, res) => {
